@@ -1,0 +1,63 @@
+# python code for  the number divisible by 7 but not multiole by 5
+
+for i in range(2000,3201):
+ 
+  if i % 7 == 0 and i % 5 != 0:
+   print(i,end=",")
+   
+# get input from user   
+
+start_num = int(input("Enter The Starting Number :"))
+end_num = int(input("Enter The Ending Number :"))
+
+for i in range(start_num,end_num):
+ 
+  if i % 7 == 0 and i % 5 != 0:
+   print(i,end=",")
+
+
+
+
+# get the first name and last name from user and then getting them printed in the reversed order.
+
+
+first_name = input("Enter Your First Name:")
+last_name =  input("Enter Your Last Name:")
+
+print(first_name[::-1],' ',last_name[::-1])
+
+
+#Using For Loop
+
+first_name = input("Enter Your First Name:")
+last_name =  input("Enter Your Last Name:")
+l=[first_name,last_name]
+
+for i in l:
+ print(i[::-1], end=" ")
+
+#Using While loop
+
+first_name = input("Enter Your First Name:")
+last_name =  input("Enter Your Last Name:")
+l=[first_name,last_name]
+i=0
+while i < len(l):
+ print(l[i][::-1], end=" ")
+ i+=1
+ 
+ 
+ 
+ # python program for find the volume of sphere
+ 
+ # print the volume of sphere. Diameter is 12
+# V=4/3 *pi*r cube
+
+d = 12 #int(input("Enter the Value of Diameter"))
+r= d/2
+pi=22/7
+rcube=pow(r,3)
+a=4/3
+
+V=a*pi*rcube
+print(V)
